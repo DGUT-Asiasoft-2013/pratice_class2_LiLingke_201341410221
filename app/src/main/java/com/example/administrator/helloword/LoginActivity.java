@@ -47,6 +47,8 @@ public class LoginActivity extends Activity{
 
   protected  void onResume(){
         super.onResume();
+
+
       fragInputCellAccount.setLabelText("用户名");
       fragInputCellAccount.setHintText("请输入用户名");
       fragInputCellPassword.setLabelText("密码");
