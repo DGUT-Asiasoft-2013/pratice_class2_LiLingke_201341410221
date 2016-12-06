@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HelloWord</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="user_name">用户名</string>
+    <string name="iputp_name">请输入用户名</string>
+    <string name="password">密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="rpass">重复密码</string>
+    <string name="comfinpassword">确认密码</string>
+
+</resources>
