@@ -31,13 +31,13 @@ public class RegisterActivity extends Activity{
     protected void onResume() {
         super.onResume();
 
-        fragInputCellAccount.setLabelText("ÓÃ»§Ãû");
-        fragInputCellAccount.setHintText("ÇëÊäÈëÓÃ»§Ãû");
-        fragInputCellPassword.setLabelText("ÃÜÂë");
-        fragInputCellPassword.setHintText("ÇëÊäÈëÃÜÂë");
+        fragInputCellAccount.setLabelText("ç”¨æˆ·å");
+        fragInputCellAccount.setHintText("è¯·è¾“å…¥ç”¨æˆ·å");
+        fragInputCellPassword.setLabelText("å¯†ç ");
+        fragInputCellPassword.setHintText("è¯·è¾“å…¥å¯†ç ");
         fragInputCellPassword.setIsPassword(true);
-        fragInputCellPasswordRepeat.setLabelText("ÖØ¸´ÃÜÂë");
-        fragInputCellPasswordRepeat.setHintText("ÇëÔÙ´ÎÊäÈëÃÜÂë");
+        fragInputCellPasswordRepeat.setLabelText("è¯·å†æ¬¡è¾“å…¥å¯†ç ");
+        fragInputCellPasswordRepeat.setHintText("ç¡®è®¤å¯†ç ");
         fragInputCellPasswordRepeat.setIsPassword(true);
 
     }

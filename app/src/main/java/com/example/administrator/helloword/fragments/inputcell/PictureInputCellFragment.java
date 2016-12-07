@@ -49,8 +49,8 @@ public class PictureInputCellFragment extends Fragment{
 
     void onImageViewClicked(){
         String[] items = {
-                "拍照",
-                "相册"
+                "鐩告満",
+                "鐩稿唽"
         };
 
 
@@ -74,7 +74,7 @@ public class PictureInputCellFragment extends Fragment{
 
                     }
                 })
-                .setNegativeButton("取消", null)
+                .setNegativeButton("鍙栨秷", null)
                 .show();
 
     }
