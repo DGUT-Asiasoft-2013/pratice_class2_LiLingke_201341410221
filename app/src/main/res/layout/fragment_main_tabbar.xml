@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:text="free"/>
+            android:text="Feeds"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tab_notes"
@@ -45,10 +45,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
-                android:text="free"/>
+                android:text="Notes"/>
         </LinearLayout>
     <LinearLayout
-        android:id="@+id/tab_new"
+
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -56,7 +56,7 @@
         android:gravity="center"
         >
         <Button
-
+            android:id="@+id/tab_new"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"/>
@@ -79,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@android:color/white"
-                    android:text="free"/>
+                    android:text="Search"/>
             </LinearLayout>
                 <LinearLayout
                     android:id="@+id/tab_me"
@@ -99,7 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/white"
-                        android:text="free"/>
+                        android:text="Me"/>
 
     </LinearLayout>
 </LinearLayout>

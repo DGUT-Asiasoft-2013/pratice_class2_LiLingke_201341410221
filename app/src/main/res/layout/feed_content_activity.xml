@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.administrator.helloword.fragments.inputcell.widgets.AvatarView
+            android:id="@+id/feed_content_item_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/feed_content_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dsf"
+            android:layout_alignTop="@+id/feed_content_item_iv"
+            android:layout_toRightOf="@+id/feed_content_item_iv"
+            android:layout_toEndOf="@+id/feed_content_item_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/feed_content_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dsfgdshgfdgjhgfj"
+            android:layout_alignBottom="@+id/feed_content_item_iv"
+            android:layout_alignLeft="@+id/feed_content_item_name"
+            android:layout_alignStart="@+id/feed_content_item_name" />
+        <TextView
+            android:id="@+id/content_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shijian"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+             />
+
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/feedcontent_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="评论"/>
+        <Button
+            android:id="@+id/feedcontent_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收藏"/>
+        <Button
+            android:id="@+id/feedcontent_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="赞"/>
+
+    </LinearLayout>
+    
+
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -28,13 +28,26 @@
                 android:layout_height="wrap_content"
                 class="com.example.administrator.helloword.fragments.inputcell.SimpleTextInputCellFragment"
                 tools:layout="@layout/fragment_inputcell_simpletext" />
+            <fragment
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="com.example.administrator.helloword.fragments.inputcell.SimpleTextInputCellFragment"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
 
+            <fragment
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="com.example.administrator.helloword.fragments.inputcell.SimpleTextInputCellFragment"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
             <fragment
                 android:id="@+id/input_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 class="com.example.administrator.helloword.fragments.inputcell.SimpleTextInputCellFragment"
                 tools:layout="@layout/fragment_inputcell_simpletext" />
+
 
             <fragment
                 android:id="@+id/input_password_repeat"
@@ -53,7 +66,7 @@
                 android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="SUBMIT" />
+                android:text="确认" />
         </LinearLayout>
     </ScrollView>
 

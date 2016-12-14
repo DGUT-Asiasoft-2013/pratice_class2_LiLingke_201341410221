@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import com.example.administrator.helloword.R;
 
+import java.io.ByteArrayOutputStream;
+
 /**
  * Created by Administrator on 2016/12/6.
  */
@@ -26,6 +28,7 @@ public class PictureInputCellFragment extends Fragment{
     ImageView imageView;
     TextView labelText;
     TextView hintText;
+    byte[] pngData;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -78,6 +81,11 @@ public class PictureInputCellFragment extends Fragment{
                 .show();
 
     }
+    void saveBitmap(Bitmap bmp){
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG,100,baos);
+        pngData = baos.toByteArray();
+    }
 
     void takePhoto(){
         Intent itnt = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -99,11 +107,13 @@ public class PictureInputCellFragment extends Fragment{
         if(requestCode == REQUESTCODE_CAMERA){
 
             Bitmap bmp = (Bitmap)data.getExtras().get("data");
+            saveBitmap(bmp);
             imageView.setImageBitmap(bmp);
         }else if(requestCode == REQUESTCODE_ALBUM){
             try{
                 Bitmap bmp = MediaStore.Images.Media
                         .getBitmap(getActivity().getContentResolver(), data.getData());
+                saveBitmap(bmp);
                 imageView.setImageBitmap(bmp);
             }catch(Exception e){
                 e.printStackTrace();
@@ -119,5 +129,9 @@ public class PictureInputCellFragment extends Fragment{
 
     public void setHintText(String hintText){
         this.hintText.setHint(hintText);
+    }
+
+    public byte[] getPngData(){
+        return pngData;
     }
 }
