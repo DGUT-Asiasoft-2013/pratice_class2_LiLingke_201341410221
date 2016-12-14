@@ -23,6 +23,7 @@ public class HelloWorldActivity extends Activity{
     MainTabbarFragment tabbar;
     String str;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_helloworld);
